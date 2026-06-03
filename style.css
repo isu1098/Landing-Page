@@ -1,17 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+/* 1. Global reset & BoSizing Fix */
+*, *::before, *::after  {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 a{
     text-decoration: none;
+    color: inherit; /* Good practice so links don't turn default blue */
 }
 
 body {
-    font-family: Roboto;
-    margin: 0;
-    padding: 20px 120px;
+    font-family: "Roboto", sans-serif;
+    padding: 20px max(20px, 5vw);
     min-height: 100vh;
     display: flex;  
     flex-direction: column;
-    justify-content: space-between;
 }
 
 header {
@@ -23,8 +29,6 @@ header {
 
 .right-links  {
     list-style: none;
-    padding: 0;
-    margin: 0;
     display: flex;
     gap: 15px;
 }
