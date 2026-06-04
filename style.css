@@ -2,7 +2,7 @@
 
 /* 1. Global reset & BoSizing Fix */
 *, *::before, *::after  {
-    /*box-sizing: border-box;*/
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -22,7 +22,7 @@ body {
 
 .hero  {
     background-color: #1f2937;
-    padding: 10px 50px 50px; 
+    padding: 10px 100px 100px;
 }
 
 header {
@@ -46,6 +46,7 @@ header {
 .hero-text {
     display: flex;
     align-content:space-between ;
+    max-width: 500 px;
 }
 
 .hero-left  {
@@ -64,4 +65,39 @@ header {
 .hero-secondary, .right-links   {
     font-size: 18px;
     color: #e5e7eb;
+}
+
+.cta-button {
+    /* Colors */
+    background-color: #3882f6; /* Vibrant primary CTA color */
+    color: #ffffff;            /* Hight-contrast text color */
+
+    /* Layout & Sizing */
+    display: inline-block;
+    padding: 10px 32px;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;       /* Removes standard link underline */
+
+    /* Asthetics */
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    /* Smooth Hover Animation */
+    transition: all 0.3s ease; /* Eases the color shift on hover */
+    cursor: pointer;
+}
+
+/* Hover State (When user moves mouse over button) */
+.cta-button:hover   {
+    background-color: #0056b3; /* Slightly darker shade for feedback */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px); /* Subtle lift effect */
+}
+
+/* Active State (When button is clicked) */
+.cta-button:active  {
+    transform: translateY(0); /* Pushes back down on click */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
