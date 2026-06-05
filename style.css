@@ -34,6 +34,7 @@ header {
 
 .head-left  {
     font-size: 24px;
+    font-weight: bolder;
     color: #F9FAF8;
 }
 
@@ -47,7 +48,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    gap: 40px;
 }
 
 .hero-left  {
@@ -82,7 +83,7 @@ header {
     text-decoration: none;       /* Removes standard link underline */
 
     /* Asthetics */
-    border-radius: 10px;
+    border-radius: 5px;
     border: none;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
@@ -104,14 +105,19 @@ header {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.placeholder   {
+    width: 500px;
+}
+
 .rounded-image  {
-    border-radius: 15px;
+    border-radius: 10px;
 }   
 
 .information   {
-    padding: 50px 100px 50px 100px;
+    padding: 50px 170px 50px 170px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 50px;
 }
 
@@ -124,8 +130,9 @@ header {
 }
 
 .cards  {
+    width: 800px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     gap: 15px;
@@ -140,4 +147,76 @@ header {
 .infotext   {
     text-align: center;
     max-width: 150px; /* 2. Centers the actual lines of wrapped text */
+}
+
+.quote-container    {
+        padding: 50px 170px 50px 170px;
+        background-color: #e5e7eb;
+}
+
+.quote  {
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: 300;
+}
+
+.author  {
+    font-weight: bolder;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.action {
+    height: 130px;
+    margin: 80px 100px 80px 100px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    background-color: #3882f6;
+    color: #ffffff;
+}
+
+.action-left  {
+    display: flex;
+    flex-direction: column;
+    padding-left: 70px;
+}
+
+.maintext   {
+    font-weight:900;
+}
+
+.subtext    {
+    font-size: x-small;
+}
+
+.action-right  {
+    padding-right: 70px;
+}
+
+button {
+     /* Layout & Sizing */
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 32px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #ffffff;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;       /* Removes standard link underline */;
+    background-color: #3882f6; /* Vibrant primary CTA color */
+    color: #ffffff;            /* Hight-contrast text color */
+}
+
+.footer {
+    height: 80px;
+    background-color: #1f2937;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
